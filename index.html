@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fer´s way - Portfolio 2026</title>
+    <meta name="description"
+        content="Free template for studios, agencies and creatives. Clean layout, CMS-ready, perfect for showcasing branding and web design work.">
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo web.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════ CUSTOM CURSOR ═══════════════════════ -->
+    <div class="custom-cursor" id="customCursor">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+            <circle class="cursor-circle" cx="10" cy="10" r="8" fill="transparent" stroke="#1d1d1b"
+                stroke-width="2.7" />
+        </svg>
+    </div>
+
+    <!-- ═══════════════════════ INTRO VIDEO ═══════════════════════ -->
+    <div class="intro-overlay" id="introOverlay">
+        <video class="intro-video" id="introVideo" autoplay muted playsinline>
+            <source src="assets/videos/video_intro_portfolio_final.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo" aria-label="Go to home">
+            <svg class="nav-logo-svg" viewBox="0 0 92.7 96" fill="#ffffff">
+                <path
+                    d="M54.92,0c.66.29,1.92,1.29,1.92,2.04v34.32l.36.36h33.84c.07,0,.92.71,1.05.87,2.72,3.66-4.33,5.19-6.61,6.28-21.43,10.26-37.63,28.07-44.91,50.85l-1.49,1.27h-1.44c-.66-.29-1.92-1.29-1.92-2.04v-34.68H1.52c-1.14,0-1.82-2.45-1.38-3.54.6-1.47,4.9-2.64,6.46-3.38,18.41-8.71,33.08-22.81,41.64-41.4.75-1.63,3.59-9.72,4.15-10.25.31-.29.83-.34,1.09-.71h1.44Z" />
+            </svg>
+        </a>
+        <button class="nav-menu-btn" id="menuToggle" aria-label="Toggle menu">
+            <svg class="nav-menu-svg" viewBox="0 0 18 12" fill="#ffffff">
+                <path
+                    d="M0,11h0c0-.55.45-1,1-1h16c.55,0,1,.45,1,1h0c0,.55-.45,1-1,1H1c-.55,0-1-.45-1-1ZM0,6h0c0-.55.45-1,1-1h16c.55,0,1,.45,1,1h0c0,.55-.45,1-1,1H1c-.55,0-1-.45-1-1ZM0,1h0C0,.45.45,0,1,0h16c.55,0,1,.45,1,1h0c0,.55-.45,1-1,1H1c-.55,0-1-.45-1-1Z" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- ═══════════════════════ MENU OVERLAY ═══════════════════════ -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-overlay-backdrop" id="menuBackdrop"></div>
+        <div class="menu-overlay-panel" id="menuPanel">
+            <div class="menu-overlay-header">
+                <button class="nav-close-btn" id="menuClose" aria-label="Close menu">
+                    <svg class="nav-close-svg" viewBox="0 0 14 14" fill="none" stroke="#ffffff" stroke-width="2"
+                        stroke-linecap="round">
+                        <line x1="1" y1="1" x2="13" y2="13" />
+                        <line x1="13" y1="1" x2="1" y2="13" />
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-overlay-content">
+                <nav class="menu-nav">
+                    <a href="#" class="menu-nav-link" data-index="01">Home</a>
+                    <a href="#works" class="menu-nav-link" data-index="02">Works</a>
+                    <a href="pages/about.html" class="menu-nav-link" data-index="04">About</a>
+                    <a href="#contact" class="menu-nav-link" data-index="05">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════ HERO SECTION ═══════════════════════ -->
+    <section class="hero" id="hero">
+        <!-- Background Wave Animation -->
+        <div class="hero-video-wrapper">
+            <canvas class="hero-wave-canvas" id="heroWaveCanvas"></canvas>
+            <div class="hero-image-trail" id="heroImageTrail"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title-wrap">
+                <h1 class="hero-title">
+                    <span class="hero-tagline hero-line-1">Design dwells</span>
+                    <span class="hero-tagline hero-line-2">in <em class="hero-accent">liminality</em></span>
+                    <span class="hero-portfolio hero-line-3">Portfolio 2026</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ PROJECTS SECTION ═══════════════════════ -->
+    <section class="projects" id="works">
+
+        <!-- Project: Becher -->
+        <div class="project-card" id="project-strobe" data-color="#2a2a2a">
+            <div class="project-bg" style="background: #223baa;">
+            </div>
+            <div class="project-content">
+                <div class="project-name">Becher</div>
+                <div class="project-visual" id="becher-visual">
+                    <div class="project-icon-wrapper has-hover-video" data-project="strobe"
+                        style="background: none; overflow: hidden;">
+                        <img src="assets/img/becher/img_becher1.jpg" alt="Becher" class="project-img-static"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <video src="assets/img/becher/Comp 1.mp4" class="project-video-hover" loop muted playsinline
+                            preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                </div>
+                <div class="project-year">2025 <br> Editoral</div>
+            </div>
+        </div>
+
+        <!-- Project: Cesida -->
+        <div class="project-card" id="project-forma" data-color="#6b7b6a">
+            <div class="project-bg" style="background: #ffbf00;">
+            </div>
+            <div class="project-content">
+                <div class="project-name">Cesida</div>
+                <div class="project-visual" id="cesida-visual">
+                    <div class="project-icon-wrapper has-hover-video" data-project="forma"
+                        style="background: none; overflow: hidden;">
+                        <img src="assets/img/cesida/cesida_logo.jpg" alt="Cesida" class="project-img-static"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <video src="assets/img/cesida/gifcesida.mp4" class="project-video-hover" loop muted playsinline
+                            preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                </div>
+                <div class="project-year">2025 <br> Rebranding</div>
+            </div>
+        </div>
+
+        <!-- Project: Dentcob -->
+        <div class="project-card" id="project-nordika" data-color="#4a3370">
+            <div class="project-bg" style="background: #00c96b;">
+            </div>
+            <div class="project-content">
+                <div class="project-name">Dentcob</div>
+                <div class="project-visual" id="nordika-visual">
+                    <div class="project-icon-wrapper has-hover-video" data-project="nordika"
+                        style="background: none; overflow: hidden;">
+                        <img src="assets/img/dentcob/Mockupdentcob.jpg" alt="Dentcob" class="project-img-static"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <video src="assets/img/dentcob/video_dentcob.mp4" class="project-video-hover" loop muted
+                            playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                </div>
+                <div class="project-year">2026, <br> Web design</div>
+            </div>
+        </div>
+
+        <!-- Project: Hoffie -->
+        <div class="project-card" id="project-aurum" data-color="#4a7ab5">
+            <div class="project-bg" style="background: #de5030;">
+            </div>
+            <div class="project-content">
+                <div class="project-name">Hoffie</div>
+                <div class="project-visual" id="hoffie-visual">
+                    <div class="project-icon-wrapper has-hover-video" data-project="aurum"
+                        style="background: none; overflow: hidden;">
+                        <img src="assets/img/hoffie/logo_mockup.jpg" alt="Hoffie" class="project-img-static"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <video src="assets/img/hoffie/hoffiegif.mp4" class="project-video-hover" loop muted playsinline
+                            preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                </div>
+                <div class="project-year">2025, <br> Branding</div>
+            </div>
+        </div>
+
+        <!-- Project: Kairo -->
+        <div class="project-card" id="project-kairo" data-color="#c44b28">
+            <div class="project-bg" style="background: #181717;">
+            </div>
+            <div class="project-content">
+                <div class="project-name">Shift</div>
+                <div class="project-visual" id="shift-visual">
+                    <div class="project-icon-wrapper has-hover-video" data-project="kairo"
+                        style="background: none; overflow: hidden;">
+                        <img src="assets/img/shift/shiftarbol.jpg" alt="Shift" class="project-img-static"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <video src="assets/img/gifshift.mp4" class="project-video-hover" loop muted playsinline
+                            preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                </div>
+                <div class="project-year">2025, <br> Magazine</div>
+            </div>
+        </div>
+
+        <!-- Project: Personal Projects -->
+        <div class="project-card" id="project-personal" data-color="#1a1a2e">
+            <div class="project-bg" style="background: #d10018;">
+            </div>
+            <div class="project-content">
+                <div class="project-name">Archive</div>
+                <div class="project-visual" id="personal-visual">
+                    <a href="pages/archive.html" class="project-icon-wrapper has-hover-video"
+                        style="background: none; overflow: hidden; display: block;">
+                        <video src="assets/img/archive/animacion_logo.mp4" class="project-img-static" autoplay loop
+                            muted playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>
+                        <video src="assets/img/archive/video_intro_about.mp4" class="project-video-hover" loop muted
+                            playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </a>
+                </div>
+                <div class="project-year">2023–2026, <br> Personal Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ PROJECT DETAIL OVERLAY ═══════════════════════ -->
+    <div class="project-detail-overlay" id="projectDetailOverlay">
+        <div class="project-detail-panel" id="projectDetailPanel">
+
+            <!-- Sticky Header -->
+            <div class="project-detail-header">
+                <span class="project-detail-tag">Project Editoral</span>
+                <button class="project-detail-close" id="projectDetailClose" aria-label="Close project detail">
+                    <svg class="nav-close-svg" viewBox="0 0 14 14" fill="none" stroke="#ffffff" stroke-width="2"
+                        stroke-linecap="round">
+                        <line x1="1" y1="1" x2="13" y2="13" />
+                        <line x1="13" y1="1" x2="1" y2="13" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Hero Title -->
+            <div class="project-detail-hero">
+                <div class="project-detail-hero-row">
+                    <h1 class="project-detail-title" id="projectDetailTitle">PROJECT</h1>
+                    <span class="project-detail-meta-right" id="projectDetailMetaRight">2025, Magazine</span>
+                </div>
+                <hr class="project-detail-rule">
+            </div>
+
+            <!-- Full-Width Images Gallery -->
+            <div class="project-detail-gallery" id="projectDetailGallery">
+                <!-- Images generated dynamically by JS -->
+            </div>
+
+            <!-- About Section -->
+            <div class="project-detail-about">
+                <div class="project-detail-about-left">
+                    <p class="project-detail-description" id="projectDetailDescription" style="display:none;">
+                    </p>
+                    <span class="project-detail-about-label">Tools.</span>
+                    <div class="project-detail-tools" id="projectDetailTools">
+                        <!-- Tools rendered dynamically by JS -->
+                    </div>
+                    <a class="project-detail-link" id="projectDetailLink" href="javascript:void(0)" target="_blank"
+                        rel="noopener" style="display:none;">
+                        Visit website →
+                    </a>
+                </div>
+                <div class="project-detail-about-right">
+                    <div class="project-detail-meta-group">
+                        <div class="project-detail-meta-item">
+                            <span class="meta-value" id="projectDetailCategory">CATEGORY</span>
+                        </div>
+                        <div class="project-detail-meta-item">
+                            <span class="meta-value" id="projectDetailYear">YEAR</span>
+                        </div>
+                        <div class="project-detail-meta-item">
+                            <span class="meta-value" id="projectDetailRole">ROLE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ═══════════════════════ SEE ALL WORKS ═══════════════════════ -->
+    <section class="see-all-works" id="seeAllWorks">
+        <a href="#works" class="see-all-link">
+            <span class="see-all-text">See all works</span>
+            <span class="see-all-arrow">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path d="M8 24H40M40 24L28 12M40 24L28 36" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </span>
+        </a>
+    </section>
+
+    <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+    <footer class="footer" id="contact">
+        <div class="footer-top">
+            <div class="footer-col footer-brand">
+                <span class="footer-logo">Portfolio 2026</span>
+            </div>
+            <div class="footer-col">
+                <span class="footer-label">Contact</span>
+                <a href="mailto:ferortegadealrosa@gmail.com" class="footer-link">ferortegadelarosa@gmail.com</a>
+                <a href="tel:+34684396322" class="footer-link">+34 684 396 322</a>
+            </div>
+            <div class="footer-col">
+                <span class="footer-label">Follow me</span>
+                <a href="https://www.instagram.com/fer.roseroseroseroseroserosero/" class="footer-link"
+                    target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/feed/" class="footer-link" target="_blank">LinkedIn</a>
+                <a href="https://x.com/ElBosco17" class="footer-link" target="_blank">Twitter / X</a>
+            </div>
+            <div class="footer-col">
+                <span class="footer-label">Legal</span>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms &amp; Conditions</a>
+            </div>
+        </div>
+        <div class="footer-watermark">
+            <span>FER´S WAY</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
